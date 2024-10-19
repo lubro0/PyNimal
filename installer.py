@@ -12,3 +12,4 @@ with open("version.txt", "r") as f:
 print(f"\033[92mVersion: {version}\033[0m")
 time.sleep(5)
 os.system("clear")
+os.remove("installer.py")
