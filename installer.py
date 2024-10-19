@@ -1,4 +1,5 @@
 import os
+import time
 
 os.system("clear")
 os.system("pkg update && pkg upgrade")
@@ -10,4 +11,5 @@ os.system("clear")
 with open("version.txt", "r") as f:
     version = f.read().strip()
 print(f"\033[92mVersion: {version}\033[0m")
+time.sleep(5)
 os.system("clear")
