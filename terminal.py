@@ -17,6 +17,12 @@ os.system('clear')
 input("Please join this Discord Server: https://discord.gg/EsdZSbAe2B\n")
 os.system('clear')
 
-user_id = input("What is your Discord user ID? ")
-with open("config/discord_config.txt", "w") as file:
-    file.write(f"user_id={user_id}\n")
+if os.path.exists("config/discord_config.txt"):
+    with open("config/discord_config.txt", "r") as file:
+        lines = file.readlines()
+    if any("user_id=" in line for line in lines):
+        pass
+    else:
+        user_id = input("What is your Discord user ID? ")
+        with open("config/discord_config.txt", "w") as file:
+            file.write(f"user_id={user_id}\n")
