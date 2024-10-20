@@ -1,5 +1,5 @@
 import os
-import subprocess
+import sys
 
 os.system('clear')
 
@@ -18,7 +18,7 @@ while True:
         print("\033[91mSOON\033[0m")
     
     if choice.lower() == "exit":
-        break
+        sys.exit()
 
     if choice.lower() == "reset":
         os.system("rm -rf config && rm -rf terminal.py && git clone --depth 1 --single-branch https://github.com/lubro0/PyNimal.git temp_dir && mv temp_dir/* . && rm -rf temp_dir && python installer.py")
