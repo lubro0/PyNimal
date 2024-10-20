@@ -9,5 +9,6 @@ os.makedirs("config", exist_ok=True)
 with open("config/discord_config.txt", "w") as file:
     pass
 
-os.system('clear')
 print("\033[92mSuccessful\033[0m")
+time.sleep(1)
+os.system('clear')
