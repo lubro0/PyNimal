@@ -15,7 +15,7 @@ print("\033[92mSuccessful\033[0m")
 time.sleep(1)
 os.system('clear')
 
-input("Please join this Discord Server: https://discord.gg/EsdZSbAe2B\nPress Enter")
+input("Please join this Discord Server: https://discord.gg/EsdZSbAe2B\n")
 os.system('clear')
 
 user_id = None
@@ -39,7 +39,10 @@ if user_id:
             {
                 "title": "Logs",
                 "description": "You have entered PyNimal successfully",
-                "color": 65280
+                "color": 65280,
+                "footer": {
+                    "text": "PyNimal v1.0-BETA"
+                }
             }
         ]
     }
