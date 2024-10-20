@@ -21,4 +21,4 @@ while True:
         os.system('python scripts/killer.py')
 
     if choice.lower() == "reset":
-        os.system("rm -rf config && rm -rf terminal.py && git clone --depth 1 --single-branch https://github.com/lubro0/PyNimal.git temp_dir && mv temp_dir/* . && rm -rf temp_dir && python installer.py")
+        os.system("rm -rf scripts && rm -rf config && rm -rf terminal.py && git clone --depth 1 --single-branch https://github.com/lubro0/PyNimal.git temp_dir && mv temp_dir/* . && rm -rf temp_dir && python installer.py")
