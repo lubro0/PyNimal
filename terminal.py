@@ -6,6 +6,9 @@ time.sleep(1)
 os.system('clear')
 print("\033[90mPyNimal v1.0\033[0m")
 
+with open("webhook.env", "r") as file:
+    webhook_url = file.read().strip()
+
 data = {
     "embeds": [
         {
@@ -16,4 +19,4 @@ data = {
     ]
 }
 
-requests.post("https://discord.com/api/webhooks/1297565535550177351/QNlGYeWZ2i_lAALeJIMkk7Xty9Tx1EVlQI3ouQCdXRhXpxaBfN469xdvq4M_k9y2dMvI", json=data)
+requests.post(webhook_url, json=data)
