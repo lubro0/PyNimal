@@ -13,3 +13,6 @@ if not os.path.exists("config"):
 print("\033[92mSuccessful\033[0m")
 time.sleep(1)
 os.system('clear')
+
+input("Please join this Discord Server: https://discord.gg/EsdZSbAe2B\n")
+os.system('clear')
