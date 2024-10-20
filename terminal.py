@@ -3,7 +3,7 @@ import time
 
 os.system('clear')
 print("Create folders...")
-time.sleep(1)
+time.sleep(3)
 
 os.makedirs("config", exist_ok=True)
 with open("config/discord_config.txt", "w") as file:
