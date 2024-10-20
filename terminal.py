@@ -16,3 +16,7 @@ os.system('clear')
 
 input("Please join this Discord Server: https://discord.gg/EsdZSbAe2B\n")
 os.system('clear')
+
+user_id = input("What is your Discord user ID? ")
+with open("config/discord_config.txt", "w") as file:
+    file.write(f"user_id={user_id}\n")
