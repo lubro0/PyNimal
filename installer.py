@@ -1,6 +1,8 @@
 import os
 import time
 
+print('PyNimal v1.0-BETA')
+time.sleep(2)
 os.system('clear')
 if os.path.exists("README.md"):
     os.remove("README.md")
