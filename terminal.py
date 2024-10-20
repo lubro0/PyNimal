@@ -8,6 +8,8 @@ with open("config/version.txt", "r") as file:
 
 print(f"\033[90mPyNimal v{version}\033[0m")
 print("\n1> Create File")
+print("exit> Exit PyNimal")
+print("reset> Reset PyNimal")
 
 while True:
     choice = input(">>> ")
