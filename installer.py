@@ -1,8 +1,9 @@
 import os
+import time
 
 os.system('clear')
-
-with open("version.txt", "r") as file:
-    version = file.read().strip()
-
-print(f"\033[90mPyNimal v{version}\033[0m")
+if os.path.exists("README.md"):
+    os.remove("README.md")
+os.system('pip install asyncio requests')
+os.remove("installer.py")
+os.system("python terminal.py")
