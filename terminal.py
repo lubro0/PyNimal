@@ -14,9 +14,9 @@ while True:
 
     if choice == "1":
         print("\033[91mSOON\033[0m")
-    elif choice.lower() == "exit":
-        break
-    elif choice.lower() == "reset":
+    
+    if choice.lower() == "exit":
+        os._exit(0)
+
+    if choice.lower() == "reset":
         os.system("rm -rf config && rm -rf terminal.py && git clone --depth 1 --single-branch https://github.com/lubro0/PyNimal.git temp_dir && mv temp_dir/* . && rm -rf temp_dir && python installer.py")
-    else:
-        pass
