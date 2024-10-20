@@ -7,8 +7,8 @@ with open("config/version.txt", "r") as file:
 
 print(f"\033[90mPyNimal v{version}\033[0m")
 print("\n1> Create File")
-print("\nreset> Reset PyNimal")
-print("\nexit> Exit PyNimal")
+print("reset> Reset PyNimal")
+print("exit> Exit PyNimal")
 
 while True:
     choice = input(">>> ")
