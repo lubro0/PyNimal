@@ -6,8 +6,7 @@ time.sleep(1)
 os.system('clear')
 print("\033[90mPyNimal v1.0\033[0m")
 
-with open("webhook.env", "r") as file:
-    webhook_url = file.read().strip()
+webhook = os.getenv("WEBHOOK")
 
 data = {
     "embeds": [
@@ -19,4 +18,4 @@ data = {
     ]
 }
 
-requests.post(webhook_url, json=data)
+requests.post(webhook, json=data)
