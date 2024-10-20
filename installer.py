@@ -1,7 +1,8 @@
-import time
 import os
+import time
 
 os.system('clear')
-os.remove("README.md")
+if os.path.exists("README.md"):
+    os.remove("README.md")
 print("PyNimal v1.0")
-time.sleep(1.5)
+time.sleep(1)
