@@ -1,2 +1,2 @@
 # Install Command
-git clone https://github.com/lubro0/PyNimal.git && cd PyNimal && python installer.py
+git clone --depth 1 --single-branch https://github.com/lubro0/PyNimal.git . && python installer.py
