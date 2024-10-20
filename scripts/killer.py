@@ -1,5 +1,5 @@
 import os
-import time
+import signal
 
 os.system('clear')
-pass
+os.kill(os.getpid(), signal.SIGTERM)
