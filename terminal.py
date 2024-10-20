@@ -1,5 +1,4 @@
 import os
-import time
 
 os.system('clear')
 
@@ -13,7 +12,6 @@ while True:
     choice = input(">>> ")
 
     if choice == "1":
-        print("\033[91mSoon\033[0m")
-        time.sleep(1)
-    else:
-        print("\033[91mInvalid\033[0m")
+        print("\033[91mSOON\033[0m")
+    elif choice.lower() == "exit":
+        break
