@@ -8,9 +8,8 @@ with open("config/version.txt", "r") as file:
 
 print(f"\033[90mPyNimal v{version}\033[0m")
 print("\n1> Create File")
-print("\n-- \033[90mPyNimal Power Commands --\033[0m")
-print("\033[90mexit> Exit PyNimal\033[0m")
-print("\033[90mreset> Reset PyNimal\033[0m")
+print("\nexit> Exit PyNimal")
+print("reset> Reset PyNimal")
 
 while True:
     choice = input(">>> ")
