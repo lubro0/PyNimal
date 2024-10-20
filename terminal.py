@@ -1,1 +1,3 @@
-print('COMING BACK LATER')
+import os
+
+os.system('clear')
