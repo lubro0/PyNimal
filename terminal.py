@@ -9,6 +9,7 @@ with open("config/version.txt", "r") as file:
 print(f"\033[90mPyNimal v{version}\033[0m")
 print("\n1> Create File")
 print("2> Delete File")
+print("3> Run File")
 print("4> List Files")
 print("\nexit> Exit PyNimal")
 print("reset> Reset PyNimal")
@@ -26,6 +27,11 @@ while True:
             os.remove(filename)
         else:
             print("\033[91mCannot delete PyNimal Files\033[0m")
+
+    if choice == "3":
+        filename = input("File Name >>> ")
+        os.system(f"python {filename}")
+        os.system("python terminal.py")
 
     if choice == "4":
         os.system("ls")
