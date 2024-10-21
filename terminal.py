@@ -15,7 +15,8 @@ while True:
     choice = input(">>> ")
 
     if choice == "1":
-        print("\033[91mSOON\033[0m")
+        filename = input("File Name >>> ")
+        os.system(f"nano {filename}")
 
     if choice.lower() == "exit":
         os.system("pkill -f terminal.py")
