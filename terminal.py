@@ -8,6 +8,7 @@ with open("config/version.txt", "r") as file:
 
 print(f"\033[90mPyNimal v{version}\033[0m")
 print("\n1> Create File")
+print("2> Delete File")
 print("4> List Files")
 print("\nexit> Exit PyNimal")
 print("reset> Reset PyNimal")
@@ -18,6 +19,13 @@ while True:
     if choice == "1":
         filename = input("File Name >>> ")
         os.system(f"nano {filename}")
+
+    if choice == "2":
+        filename = input("File Name >>> ")
+        if filename not in ["terminal.py", "config"]:
+            os.remove(filename)
+        else:
+            print("\033[91mCannot delete terminal.py or config\033[0m")
 
     if choice == "4":
         os.system("ls")
