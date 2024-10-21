@@ -8,6 +8,7 @@ with open("config/version.txt", "r") as file:
 
 print(f"\033[90mPyNimal v{version}\033[0m")
 print("\n1> Create File")
+print("4> List Files")
 print("\nexit> Exit PyNimal")
 print("reset> Reset PyNimal")
 
@@ -17,6 +18,9 @@ while True:
     if choice == "1":
         filename = input("File Name >>> ")
         os.system(f"nano {filename}")
+
+    if choice == "4":
+        os.system("ls")
 
     if choice.lower() == "exit":
         os.system("pkill -f terminal.py")
