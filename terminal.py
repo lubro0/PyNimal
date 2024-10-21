@@ -13,6 +13,7 @@ print("3> Run File")
 print("4> List Files")
 print("\nexit> Exit PyNimal")
 print("reset> Reset PyNimal")
+print("\n")
 
 while True:
     choice = input(">>> ")
