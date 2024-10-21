@@ -11,9 +11,9 @@ print("\n1> Create File")
 print("2> Delete File")
 print("3> Run File")
 print("4> List Files")
+print("5> Run PyNimal Again")
 print("\nexit> Exit PyNimal")
 print("reset> Reset PyNimal")
-print("\n")
 
 while True:
     choice = input(">>> ")
@@ -37,6 +37,9 @@ while True:
 
     if choice == "4":
         os.system("ls")
+
+    if choice == "5":
+        os.system("python terminal.py")
 
     if choice.lower() == "exit":
         os.system("pkill -f terminal.py")
