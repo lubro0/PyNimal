@@ -4,6 +4,8 @@ import time
 
 os.system('clear')
 
+os.system("python scripts/runWebhook.py")
+
 with open("config/version.txt", "r") as file:
     version = file.read().strip()
 
@@ -32,7 +34,7 @@ while True:
     if choice == "3":
         filename = input("File Name >>> ")
         if filename.strip() == "":
-            os.system("exit()")
+            sys.exit()
         else:
             os.system(f"python {filename}")
             input("\033[94mPress Enter to return to PyNimal...\033[0m")
