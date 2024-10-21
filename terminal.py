@@ -31,6 +31,7 @@ while True:
     if choice == "3":
         filename = input("File Name >>> ")
         os.system(f"python {filename}")
+        input("Press Enter to return to PyNimal...")
         os.system("python terminal.py")
 
     if choice == "4":
