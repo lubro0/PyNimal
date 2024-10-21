@@ -1,5 +1,6 @@
 import os
 import sys
+import time
 
 os.system('clear')
 
@@ -30,9 +31,12 @@ while True:
 
     if choice == "3":
         filename = input("File Name >>> ")
-        os.system(f"python {filename}")
-        input("\033[94mPress Enter to return to PyNimal...\033[0m")
-        os.system("python terminal.py")
+        if filename.strip() == "":
+            exec("exit()")
+        else:
+            os.system(f"python {filename}")
+            input("\033[94mPress Enter to return to PyNimal...\033[0m")
+            os.system("python terminal.py")
 
     if choice == "4":
         os.system("ls")
