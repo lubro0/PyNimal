@@ -25,7 +25,7 @@ while True:
         if filename not in ["terminal.py", "config"]:
             os.remove(filename)
         else:
-            print("\033[91mCannot delete terminal.py or config\033[0m")
+            print("\033[91mCannot delete PyNimal Files\033[0m")
 
     if choice == "4":
         os.system("ls")
