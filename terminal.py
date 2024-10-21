@@ -32,7 +32,7 @@ while True:
     if choice == "3":
         filename = input("File Name >>> ")
         if filename.strip() == "":
-            exec("exit()")
+            os.system("exit()")
         else:
             os.system(f"python {filename}")
             input("\033[94mPress Enter to return to PyNimal...\033[0m")
